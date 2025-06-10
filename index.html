@@ -4,14 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Denise Sophy Mutayi | Cybersecurity Portfolio</title>  
+  <title>Denise Sophy Mutayi | Cybersecurity Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
       background-color: #0d1117;
-      color: #c9d1d9; 
+      color: #c9d1d9;
+    }
+
+    nav {
+      background-color: #161b22;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      border-bottom: 1px solid #30363d;
+    }
+
+    nav a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     header {
@@ -22,8 +41,8 @@
     }
 
     header img {
-      width: 400px;
-      height: 400px;
+      width: 200px;
+      height: 200px;
       object-fit: cover;
       border-radius: 50%;
       border: 4px solid #58a6ff;
@@ -81,66 +100,39 @@
 </head>
 
 <body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#resume">Resume</a>
+    <a href="#projects">Projects</a>
+    <a href="#lab-challenges">Lab Challenges</a>
+    <a href="#contacts">Contact</a>
+  </nav>
+
   <header id="home">
-    <img src="assets/images/mdos.jpg " alt="Photo of Denise">
+    <img src="assets/images/mdos.jpg" alt="Photo of Denise">
     <h1><b>Denise Sophy Ondiso Mutayi</b></h1>
     <p>Cybersecurity Enthusiast | Network Security | Cloud Security</p>
   </header>
 
   <section id="resume">
     <h2>Resume</h2>
-    <p><strong>Work Experience:</strong><br>
-      <ul>
-        <li><strong>Cybersecurity Analyst (Virtual) – Mastercard (Apr 2025)</strong></li>
-        Investigated a simulated phishing attack, identifying compromise vectors and recommending user training to reduce risks.
-       Translated complex cybersecurity concepts into easy-to-understand content for non-technical teams.
-    Created user-centric awareness materials (infographics, scenario-based emails) to promote secure online behavior and proper data handling.
-        <li><strong>NOC Intern – ICT Authority (Sept–Dec 2023)</strong></li>
-         Monitored real-time network activity across regions, proactively identifying threats and performance issues. 
-         Collaborated across teams to resolve technical incidents, improving MTTR and boosting network uptime. 
-          Delivered daily reports to management, enhancing operational visibility.
-        <li><strong>Tech Support Intern – KBC (Oct–Dec 2021)</strong></li>
-          Troubleshooting and resolving hardware and software problems of the users.
-          Managed inventory and documentation, set up user profiles, and ensured all equipment met IT standards.
-          Trained users on basic hardware/software use and recommended tech solutions to enhance productivity.
-      </ul>
-    </p>
-    <p><strong>Education:</strong><br>
+    <p><strong>Academic Background:</strong><br>
       BSc Information Technology, JKUAT (Second Class Upper)<br>
       Diploma in IT, JKUAT (Credit)</p>
     <p><strong>Certifications:</strong><br>
       Cyber Shujaa Cybersecurity Program (In Progress)<br>
       ISC2 Certified in Cybersecurity (In Progress)</p>
-    <p><strong>Skills:</strong><br> 
+    <p><strong>Work Experience:</strong><br>
       <ul>
-  <li>Network Tools: Wireshark, Cisco Packet Tracer</li>
-  <li> Cybersecurity:Phishing Analysis, Hack The Box Labs, Social Engineering Awareness</li>
-   <li>Networking: Routing & Switching, DNS/DHCP</li>
-  <li> Operating Systems: Windows, Linux (Basic CLI Navigation & Scripting)</li>
-  <li> Programming & Scripting: Python, PHP, HTML, CSS, Bash</li>
-   <li>Database Management: MySQL</li>
-   <li>Helpdesk & IT Support: System Installation, Troubleshooting, Software Configuration, User Onboarding</li>
-   <li>Reporting & Documentation: Network Reports, Technical Summaries</li>
-  <li> Office & Collaboration Tools: Microsoft Office 365 (Word, Excel, PowerPoint), Google Workspace</li>
-  <li> Virtual Labs & Training Platforms: Vmware</li>
-   <li>Basic ITIL Knowledge: Incident, Problem, and Change Management Principles</li></ul> </p>
+        <li><strong>Cybersecurity Analyst (Virtual) – Mastercard (Apr 2025)</strong>: Phishing assessments, awareness design</li>
+        <li><strong>NOC Intern – ICT Authority (Sept–Dec 2023)</strong>: Real-time monitoring, diagnostics, ITIL practices</li>
+        <li><strong>Tech Support Intern – KBC (Oct–Dec 2021)</strong>: Troubleshooting, system setup, user support</li>
+      </ul>
+    </p>
+    <p><strong>Skills:</strong><br>
+      Wireshark, Packet Tracer, Bash, Python, MySQL, HTML/CSS, Windows/Linux, Helpdesk, VM labs</p>
   </section>
-<section id="lab-challenges">
-    <h2>Lab Challenges</h2>
-    <ul>
-      <li><strong>GETTING STARTED WITH CISCO PACKET TRACER</strong><br>
-        <em>Problem:</em>Explore the fundamentals of Cisco Packet Tracer<br>
-        <em>Tools:</em> CISCO PACKET TRACER<br>
-        <em>Lessons:</em>Practiced basic tasks such as assigning IP addresses, testing connectivity using tools like ping, and switching between real-time and simulation modes to observe how packets move through a network</li>
-      <li><strong>Intro to Academy module on Hack The Box</strong><br>
-        <em>Problem:</em> complete the introductory module as a foundational step in my cybersecurity learning path.<br>
-        <em>Lessons:</em> it introduced me to a way of thinking like a hacker: curious, analytical, and relentless. It helped me embrace the idea that every command line, every challenge, and even every mistake is part of the learning process.</li>
-      <li><strong>TRYHACKME: DNS IN DETAIL</strong><br>
-        <em>Problem:</em>Explore the fundamentals of DNS in Five detailed steps<br>
-        <em>Tools:</em> TRYHACK ME PLATFORM<br>
-        <em>Lessons:</em>enhanced our theoretical understanding of DNS but also developed our practical skills in domain analysis—essential knowledge for anyone pursuing a career in IT or cybersecurity.</li>
-    </ul>
-  </section>
+
   <section id="projects">
     <h2>Projects</h2>
     <ul>
@@ -153,7 +145,23 @@
     </ul>
   </section>
 
-  
+  <section id="lab-challenges">
+    <h2>Lab Challenges</h2>
+    <ul>
+      <li><strong>Wireshark Deep Dive</strong><br>
+        <em>Problem:</em> Analyze network traffic for anomalies<br>
+        <em>Tools:</em> Wireshark, TShark<br>
+        <em>Lessons:</em> Learned about TCP stream reconstruction, DNS sniffing</li>
+      <li><strong>Phishing Simulation Writeup</strong><br>
+        <em>Problem:</em> Analyze a phishing incident and report findings<br>
+        <em>Tools:</em> Forage labs, design tools for awareness content<br>
+        <em>Lessons:</em> Developed user-centric infographics for awareness</li>
+      <li><strong>FTP Credential Capture Lab</strong><br>
+        <em>Problem:</em> Capture and analyze FTP login traffic on an insecure network<br>
+        <em>Tools:</em> Wireshark, Kali Linux, Metasploitable<br>
+        <em>Lessons:</em> Understood FTP protocol vulnerabilities and practiced ethical data extraction techniques</li>
+    </ul>
+  </section>
 
   <section id="contacts" class="contact">
     <h2>Contact</h2>
