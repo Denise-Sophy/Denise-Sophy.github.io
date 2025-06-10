@@ -4,19 +4,19 @@ title: "About"
 ---
 denise:
   name: "Denise Sophy Ondiso Mutayi"
-  avatar: "C:\Users\user\Desktop\Mimmo\mdos.jpg" # Add your photo here
+  avatar: "C:\Users\user\Desktop\Mimmo\mdos.jpg"
   bio: >
     Cybersecurity Enthusiast 🔐 | AI Explorer 🤖 | Passionate about building secure, intelligent systems that make the world a little easier (and a lot cooler).
-    When I’m not analyzing packets or training models, I’m probably skating, dancing, or catching an anime episode 🎧💃🏽🌊.
-  location: "Nairobi, Kenya"
-  email: your.email@example.com
+   
+  location: Nairobi, Kenya
+  email: denisemutayi@gmail.com
   links:
     - label: "GitHub"
       icon: "fab fa-github"
-      url: "https://github.com/yourusername"
+      url: "https://github.com/Denise-Sophy"
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
-      url: "https://linkedin.com/in/yourusername"
+      url: "https://www.linkedin.com/in/denisesophymutayi/"
     - label: "Resume"
       icon: "fas fa-file-alt"
-      url: "/assets/files/Denise-Sophy-CV.pdf"
+      url: "C:\Users\user\Desktop\employment\Denise Sophy Curriculum Vitaee.pdf"
