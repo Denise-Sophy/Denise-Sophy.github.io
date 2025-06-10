@@ -2,10 +2,9 @@
 permalink: /about/
 title: "About"
 ---
-denise:
-  name: "Denise Sophy Ondiso Mutayi"
-  avatar: "C:\Users\user\Desktop\Mimmo\mdos.jpg"
-  bio: >
+Hi I am Denise Sophy Ondiso Mutayi
+  avatar: "/assets/images/mdos.jpg" 
+  bio: 
     Cybersecurity Enthusiast 🔐 | AI Explorer 🤖 | Passionate about building secure, intelligent systems that make the world a little easier (and a lot cooler).
    
   location: Nairobi, Kenya
