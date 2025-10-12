@@ -2,219 +2,379 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Denise Sophy Mutayi | Cybersecurity Portfolio</title> 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0; 
-      font-family: 'Montserrat', sans-serif;
-      background-color: #0d1117; 
-      color: #c9d1d9; 
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denise Sophy Mutayi | Cybersecurity Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a1a1a;
+            color: #f2f2f2;
+        }
 
-    header {
-      background-color: #161b22;
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 1px solid #30363d;
-    }
+        header {
+            background-color: #242424;
+            padding: 2rem;
+            border-bottom: 1px solid #3a3a3a;
+        }
 
-    header img {
-      width: 300px;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #58a6ff;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
 
-    header h1 {
-      margin: 1rem 0 0.5rem;
-      font-size: 2rem;
-      color: #58a6ff;
-    }
+        .header-content img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            object-position: center 15%;
+            border-radius: 50%;
+            border: 4px solid #a855f7;
+            box-shadow: 0 0 20px #a855f7;
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
 
-    header p {
-      font-size: 1.1rem;
-      color: #8b949e;
-    }
-  html {
-  scroll-behavior: smooth;
-}
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-      border-bottom: 1px solid #30363d;
-    }
+        .header-text {
+            max-width: 600px;
+            text-align: left;
+        }
 
-    h2 {
-      color: #58a6ff;
-      border-left: 4px solid #58a6ff;
-      padding-left: 0.5rem;
-      margin-bottom: 1rem;
-    }
+        .header-text h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.5rem;
+            color: #a855f7;
+        }
 
-    ul, p {
-      line-height: 1.6;
-    }
+        .header-text p {
+            font-size: 1.2rem;
+            color: #d1c4e9;
+        }
 
-    .contact a {
-      color: #58a6ff;
-      text-decoration: none;
-      display: inline-block;
-      margin-right: 15px;
-    }  
- 
-    .contact a:hover {
-    a {
-      color: #58a6ff;
-      text-decoration: none;
-      transition: all 0.3s ease;
-}
+        nav {
+            background-color: #242424;
+            border-bottom: 1px solid #3a3a3a;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
 
-a:hover {
-  color: #fff;
-  text-shadow: 0 0 5px #58a6ff, 0 0 10px #58a6ff, 0 0 15px #58a6ff;
-}
+        nav a {
+            color: #c084fc;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
 
-    }
+        nav a:hover {
+            color: #fff;
+            text-shadow: 0 0 5px #c084fc, 0 0 10px #c084fc;
+        }
 
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #161b22;
-      color: #8b949e;
-      font-size: 0.9rem;
-    }
-  
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+            border-bottom: 1px solid #3a3a3a;
+        }
 
-  </style>
+        h2 {
+            color: #c084fc;
+            border-left: 4px solid #c084fc;
+            padding-left: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* EXPERIENCE & PROJECTS FLEX */
+        .experience-projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .experience,
+        .projects {
+            background-color: #2a2a2a;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            flex: 1 1 45%;
+        }
+
+        .experience-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: space-between;
+        }
+
+        .experience-card {
+            background-color: #242424;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            flex: 1 1 calc(50% - 0.75rem);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(168, 85, 247, 0.5);
+        }
+
+        .experience-card strong {
+            color: #a855f7;
+            font-size: 1.1rem;
+        }
+
+        .experience-card ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 0.5rem;
+        }
+
+        .experience-card li {
+            line-height: 1.6;
+            margin-bottom: 0.4rem;
+        }
+
+        /* PROJECTS GRID */
+        .projects ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .projects li {
+            background-color: #242424;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .projects li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(168, 85, 247, 0.5);
+        }
+
+        .projects li strong {
+            color: #a855f7;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .projects img {
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        /* CONTACT FORM STYLES */
+        .contact {
+            text-align: center;
+        }
+
+        .contact form {
+            display: grid;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 1.5rem auto 0;
+            padding: 1rem;
+            background-color: #2a2a2a;
+            border-radius: 10px;
+        }
+
+        .contact input[type="text"],
+        .contact input[type="email"],
+        .contact textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #444;
+            border-radius: 6px;
+            background-color: #333;
+            color: #f2f2f2;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        .contact input[type="text"]:focus,
+        .contact input[type="email"]:focus,
+        .contact textarea:focus {
+            border-color: #a855f7;
+            outline: none;
+        }
+
+        .contact textarea {
+            resize: vertical;
+        }
+
+        .contact button {
+            background-color: #a855f7;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        .contact button:hover {
+            background-color: #c084fc;
+            transform: translateY(-2px);
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: #c084fc;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+            text-shadow: 0 0 5px #a855f7, 0 0 10px #a855f7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #242424;
+            color: #c9c9c9;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 900px) {
+            .experience-projects {
+                flex-direction: column;
+            }
+
+            .experience-card {
+                flex: 1 1 100%;
+            }
+
+            .header-text {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <nav style="background-color: #161b22; border-bottom: 1px solid #30363d; padding: 1rem 0; position: sticky; top: 0; z-index: 999;">
-    <div style="max-width: 900px; margin: auto; display: flex; justify-content: center; gap: 2rem;">
-      <a href="#home" style="color: #58a6ff; text-decoration: none; font-weight: bold;">Home</a>
-      <a href="#resume" style="color: #58a6ff; text-decoration: none; font-weight: bold;">Resume</a>
-      <a href="#lab-challenges" style="color: #58a6ff; text-decoration: none; font-weight: bold;">Lab Challenges</a>
-      <a href="#projects" style="color: #58a6ff; text-decoration: none; font-weight: bold;">Projects</a>
-      <a href="#contacts" style="color: #58a6ff; text-decoration: none; font-weight: bold;">Contact</a>
-    </div>
-  </nav> 
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact-me">Contact</a>
+    </nav>
 
- <header id="home">
- <div style="display: flex; align-items: center; gap: 2rem; justify-content: center; flex-wrap: wrap; padding: 2rem;">
+    <header id="home">
+        <div class="header-content">
+            <img src="images/mdossss.JPG" alt="Denise photo">
+            <div class="header-text">
+                <h1>Hey, I'm Denise</h1>
+                <p>I'm passionate about cybersecurity and specialize in SOC operations, threat intelligence, and incident handling. I thrive on analyzing threats, responding to incidents, and protecting networks and endpoints. My goal is to turn complex security challenges into actionable solutions while staying ahead of emerging threats.</p>
+            </div>
+        </div>
+    </header>
 
-  <!-- Profile Picture (Circular, Clean & Glowing) -->
-  <img src="assets/images/mdossss.JPG" alt="Photo of Denise" class="profile-pic" style="
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    object-position: top center;
-    border-radius: 50%;
-    border: 4px solid #58a6ff;
-    box-shadow: 0 0 20px #58a6ff;
-  ">
+    <section class="experience-projects">
+        <div class="experience" id="experience">
+            <h2>Experience</h2>
+            <div class="experience-container">
+                <div class="experience-card">
+                    <strong>Network Operations Centre Intern – ICT Authority (Sept–Dec 2023)</strong>
+                    <ul>
+                        <li>Monitored real-time network and endpoint activity, detected anomalies, and collaborated with system teams to maintain uptime and resilience.</li>
+                        <li>Analyzed firewall logs, identified vulnerabilities, and recommended mitigation strategies.</li>
+                        <li>Collaborated with systems and network teams to resolve incidents swiftly, minimizing downtime and reinforcing infrastructure reliability.</li>
+                        <li>Maintained compliance and vulnerability logs for audits and regulatory reporting.</li>
+                        <li>Documented incident response and endpoint security procedures.</li>
+                    </ul>
+                </div>
 
-  <!-- Intro Text (Styled like royalty) -->
-  <div style="max-width: 500px; text-align: left;">
-    <h1 style="color: #ffffff; font-size: 2.5rem; margin: 0;">Hey, I'm Denise</h1>
-    <p style="color: #a8b3c4; font-size: 1.2rem; line-height: 1.6; margin-top: 1rem;">
-      A passionate Cybersecurity enthusiast diving deep into networks, threats & digital defenses.
-      Let’s secure the web one packet at a time 💻🔐
-    </p>
-  </div>
+                <div class="experience-card">
+                    <strong>Tech Support Intern – Kenya Broadcasting Corporation (Oct–Dec 2021)</strong>
+                    <ul>
+                        <li>Delivered first-line support for 50+ users and managed OS upgrades, endpoint security, and VPN configurations.</li>
+                        <li>Installed and hardened workstations, applying antivirus and patch management policies for compliance.</li>
+                        <li>Configured VPNs and multi-user access control for secure mobility.</li>
+                        <li>Conducted threat scans, managed accounts, and maintained system integrity and user data protection.</li>
+                        <li>Documented IT procedures and supported audit readiness.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-</div>
+        <div class="projects" id="projects">
+            <h2>Projects & Certifications</h2>
+            <ul>
+                <li>
+                    <strong>Intro to Splunk</strong><br>
+                    Completed foundational Splunk training covering log ingestion, search processing language (SPL), dashboard creation, and basic security monitoring. Applied knowledge to analyze network logs, detect anomalies, and generate actionable insights.
+                    <img src="images/splunk.png" alt="Splunk Certificate">
+                </li>
 
-</header>
+                <li>
+                    <strong>PwC & Mastercard Cybersecurity Simulations</strong><br>
+                    Conducted phishing and endpoint compromise analysis. Generated incident reports and simulated remediation workflows. Applied techniques from ISC² Certified in Cybersecurity and Cisco Ethical Hacking.
+                    <img src="images/pc.png" alt="PwC & Mastercard Certificate">
+                </li>
 
+                <li>
+                    <strong>Security Operations – ISC² Certified in Cybersecurity (Domain 5)</strong><br>
+                    Configured logging and monitored endpoints to detect suspicious activity. Hardened systems and applied secure configurations. Simulated incidents and executed containment and recovery workflows.
+                    <img src="images/domain5.png" alt="ISC2 Domain 5 Certificate">
+                </li>
+            </ul>
+        </div>
+    </section>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <p><strong>Work Experience:</strong><br>
-      <ul>
-        <li><strong>Cybersecurity Analyst (Virtual) – Mastercard (Apr 2025)</strong></li>
-        Investigated a simulated phishing attack, identifying compromise vectors and recommending user training to reduce risks.
-       Translated complex cybersecurity concepts into easy-to-understand content for non-technical teams.
-    Created user-centric awareness materials (infographics, scenario-based emails) to promote secure online behavior and proper data handling.
-        <li><strong>NOC Intern – ICT Authority (Sept–Dec 2023)</strong></li>
-         Monitored real-time network activity across regions, proactively identifying threats and performance issues. 
-         Collaborated across teams to resolve technical incidents, improving MTTR and boosting network uptime. 
-          Delivered daily reports to management, enhancing operational visibility.
-        <li><strong>Tech Support Intern – KBC (Oct–Dec 2021)</strong></li>
-          Troubleshooting and resolving hardware and software problems of the users.
-          Managed inventory and documentation, set up user profiles, and ensured all equipment met IT standards.
-          Trained users on basic hardware/software use and recommended tech solutions to enhance productivity.
-      </ul>
-    </p>
-    <p><strong>Education:</strong><br>
-      BSc Information Technology, JKUAT (Second Class Upper)<br>
-      Diploma in IT, JKUAT (Credit)</p>
-    <p><strong>Certifications:</strong><br>
-      Cyber Shujaa Cybersecurity Program (In Progress)<br>
-      ISC2 Certified in Cybersecurity (In Progress)</p>
-    <p><strong>Skills:</strong><br> 
-      <ul>
-  <li>Network Tools: Wireshark, Cisco Packet Tracer</li>
-  <li> Cybersecurity:Phishing Analysis, Hack The Box Labs, Social Engineering Awareness</li>
-   <li>Networking: Routing & Switching, DNS/DHCP</li>
-  <li> Operating Systems: Windows, Linux (Basic CLI Navigation & Scripting)</li>
-  <li> Programming & Scripting: Python, PHP, HTML, CSS, Bash</li>
-   <li>Database Management: MySQL</li>
-   <li>Helpdesk & IT Support: System Installation, Troubleshooting, Software Configuration, User Onboarding</li>
-   <li>Reporting & Documentation: Network Reports, Technical Summaries</li>
-  <li> Office & Collaboration Tools: Microsoft Office 365 (Word, Excel, PowerPoint), Google Workspace</li>
-  <li> Virtual Labs & Training Platforms: Vmware</li>
-   <li>Basic ITIL Knowledge: Incident, Problem, and Change Management Principles</li></ul> </p>
-  </section>
-<section id="lab-challenges">
-    <h2>Lab Challenges</h2>
-    <ul>
-      <li><strong>GETTING STARTED WITH CISCO PACKET TRACER</strong><br>
-        <em>Problem:</em>Explore the fundamentals of Cisco Packet Tracer<br>
-        <em>Tools:</em> CISCO PACKET TRACER<br>
-        <em>Lessons:</em>Practiced basic tasks such as assigning IP addresses, testing connectivity using tools like ping, and switching between real-time and simulation modes to observe how packets move through a network</li>
-      <li><strong>Intro to Academy module on Hack The Box</strong><br>
-        <em>Problem:</em> complete the introductory module as a foundational step in my cybersecurity learning path.<br>
-        <em>Lessons:</em> it introduced me to a way of thinking like a hacker: curious, analytical, and relentless. It helped me embrace the idea that every command line, every challenge, and even every mistake is part of the learning process.</li>
-      <li><strong>TRYHACKME: DNS IN DETAIL</strong><br>
-        <em>Problem:</em>Explore the fundamentals of DNS in Five detailed steps<br>
-        <em>Tools:</em> TRYHACK ME PLATFORM<br>
-        <em>Lessons:</em>enhanced our theoretical understanding of DNS but also developed our practical skills in domain analysis—essential knowledge for anyone pursuing a career in IT or cybersecurity.</li>
-    </ul>
-  </section>
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Kenyan Recipe Recommender System</strong><br>
-        ML-based personalized recipe engine focused on healthy eating and data privacy.</li>
-      <li><strong>Internship Management System</strong><br>
-        PHP/SQL web app for managing internship applications and assessments.</li>
-      <li><strong>Portfolio Website</strong><br>
-        Personal digital identity with resume, projects, and lab write-ups. Built with HTML/CSS.</li>
-    </ul>
-  </section>
+    <section id="contact-me" class="contact">
+        <h2>Get in Touch</h2>
+        <p>I am actively seeking opportunities in Cybersecurity, Threat Intelligence, SOC operations, and Incident Handling. Feel free to connect via my social channels or use the form below.</p>
 
-  
+        <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message 🚀</button>
+        </form>
 
-  <section id="contacts" class="contact">
-    <h2>Contact</h2>
-    <p>
-      <a href="mailto:denisemutayi@gmail.com">Email</a>
-      <a href="https://github.com/Denise-Sophy" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/denisesophymutayi" target="_blank">LinkedIn</a>
-      <br>
-      Tel: +254708123250
-    </p>
-  </section>
+        <div class="social-links">
+            <a href="mailto:denisemutayi@gmail.com">Email</a>
+            <a href="https://medium.com/@Denise-Sophy" target="_blank">Medium</a>
+            <a href="https://linkedin.com/in/denisesophymutayi" target="_blank">LinkedIn</a>
+            <a href="https://x.com/denise_cyber_" target="_blank">X</a>
+        </div>
+    </section>
 
-  <footer>
-    &copy; 2025 Denise Sophy Ondiso Mutayi | Cyber Defender in the Making
-  </footer>
+    <footer>
+        &copy; 2025 Denise Sophy Ondiso Mutayi | Cyber Defender | All rights reserved.
+    </footer>
 </body>
 
-</html> 
+</html>
